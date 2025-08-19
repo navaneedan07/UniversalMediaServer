@@ -2,6 +2,54 @@
 
 ## [Unreleased]
 
+### General
+- Added a user switcher to the web interface
+- Added support for being logged in as multiple users on the web interface
+
+  ![multiple users](./changelog-images/15.0.0-b1-user-switcher.png)
+- Added a mode switcher to the web interface to make it easier to switch between Player mode and Settings mode
+
+  ![mode switcher](./changelog-images/15.0.0-a1-mode-switcher.png)
+- Added dynamic TV season information when viewing a season on the web player
+
+  ![season metadata](./changelog-images/15.0.0-a1-season-metadata.png)
+- Added the option to use pin codes on the web interface
+
+  ![pin code](./changelog-images/15.0.0-a1-pin-code.png)
+- Added file media info (location, types, streams, subtitles...) to the web player
+- Added accessibility linting to web interface
+- Use the custom name of the server on the web player and settings
+- Moved the settings menu from the dropdown to a side menu on the web interface
+- Moved the user avatar on the web interface to the top-right where the dropdown menu was
+- Made the size of the left menu in the web interface customizable
+- Made the user actions like login and logout happen from the avatar menu
+- Made it clearer when you are using the default/anonymous user
+- Made internal scrollbars wider on the web interface
+- Made Shared Content page on the web interface easier to use and more compact
+- Automatic management of max memory
+- Replaced SSE (Server-sent events) with websockets on web interface
+- Fixed the scrollbar sitting on top of the last link on a long list in the left menu on the web interface
+- Fixed the Recently Added folder in the Media Library not sorting by date added (before it was the file modified time)
+- Improved development workflow
+- Added and improved notifications on web interface
+- Added a link to the Knowledge Base on the web interface, to the right of the language switcher button
+- Replaced Help tab on the old interface with a link to the Knowledge Base on the About tab
+
+### Dependencies
+- Bump `@playwright/test` from 1.54.1 to 1.54.2 ([#5677](https://github.com/UniversalMediaServer/UniversalMediaServer/pull/5677))
+- Bump `@stylistic/eslint-plugin` from 5.2.2 to 5.2.3 ([#5701](https://github.com/UniversalMediaServer/UniversalMediaServer/pull/5701))
+- Bump `@vitejs/plugin-react` from 4.6.0 to 4.7.0 ([#5676](https://github.com/UniversalMediaServer/UniversalMediaServer/pull/5676))
+- Bump `actions/checkout` from 4 to 5 ([#5704](https://github.com/UniversalMediaServer/UniversalMediaServer/pull/5704))
+- Bump `com.github.oshi:oshi-core` from 6.8.2 to 6.8.3 ([#5703](https://github.com/UniversalMediaServer/UniversalMediaServer/pull/5703))
+- Bump `com.puppycrawl.tools:checkstyle` from 10.26.1 to 11.0.0 ([#5688](https://github.com/UniversalMediaServer/UniversalMediaServer/pull/5688))
+- Bump `com.zaxxer:HikariCP` from 6.3.2 to 7.0.1 ([#5674](https://github.com/UniversalMediaServer/UniversalMediaServer/pull/5674), [#5690](https://github.com/UniversalMediaServer/UniversalMediaServer/pull/5690))
+- Bump `org.eclipse.jetty:jetty-client` from 12.0.23 to 12.0.25 ([#5687](https://github.com/UniversalMediaServer/UniversalMediaServer/pull/5687), [#5702](https://github.com/UniversalMediaServer/UniversalMediaServer/pull/5702))
+- Bump `org.eclipse.jetty.ee10:jetty-ee10-servlet` from 12.0.23 to 12.0.25 ([#5687](https://github.com/UniversalMediaServer/UniversalMediaServer/pull/5687), [#5702](https://github.com/UniversalMediaServer/UniversalMediaServer/pull/5702))
+- Bump `org.eclipse.jetty.ee10.websocket:jetty-ee10-websocket-jakarta-server` from 12.0.23 to 12.0.25 ([#5687](https://github.com/UniversalMediaServer/UniversalMediaServer/pull/5687), [#5702](https://github.com/UniversalMediaServer/UniversalMediaServer/pull/5702))
+- Bump `org.eclipse.jetty.http2:jetty-http2-server` from 12.0.23 to 12.0.25 ([#5687](https://github.com/UniversalMediaServer/UniversalMediaServer/pull/5687), [#5702](https://github.com/UniversalMediaServer/UniversalMediaServer/pull/5702))
+- Bump `react-router-dom` from 7.7.0 to 7.7.1 ([#5678](https://github.com/UniversalMediaServer/UniversalMediaServer/pull/5678))
+- Bump `react-router-dom` from 7.7.0 to 7.8.0 ([#5678](https://github.com/UniversalMediaServer/UniversalMediaServer/pull/5678), [#5686](https://github.com/UniversalMediaServer/UniversalMediaServer/pull/5686))
+
 ## [14.13.1](https://github.com/UniversalMediaServer/UniversalMediaServer/compare/14.13.0...14.13.1) (2025-07-30)
 
 ### General
@@ -87,6 +135,7 @@
 - Ignore CacheClip folder set by Davinci Resolve
 - Fixed Docker release not updating the "latest" tag
 - Replaced deprecated methods
+
 ### Translation updates via Crowdin
 - Chinese (Simplified) (64%) (thanks, ZhugeBright!)
 - Czech (100%)
@@ -322,7 +371,7 @@
 - Bump `typescript` from 5.7.3 to 5.8.2 ([#5346](https://github.com/UniversalMediaServer/UniversalMediaServer/pull/5346))
 - Bump `video.js` from 8.21.0 to 8.22.0 ([#5385](https://github.com/UniversalMediaServer/UniversalMediaServer/pull/5385))
 - Bump `vite` from 6.2.0 to 6.2.2 ([#5383](https://github.com/UniversalMediaServer/UniversalMediaServer/pull/5383))
-- Bump youtube-dl from 2025.01.01 to 2025.02.28
+- Bump `youtube-dl` from 2025.01.01 to 2025.02.28
 
 ## [14.11.0](https://github.com/UniversalMediaServer/UniversalMediaServer/compare/14.10.1...14.11.0) (2025-03-08)
 
